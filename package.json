@@ -5,14 +5,15 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
+    "docs:dev": "cross-env NODE_ENV=development vitepress dev docs",
+    "docs:build": "cross-env NODE_ENV=production vitepress build docs",
     "docs:preview": "vitepress preview docs"
   },
   "keywords": [],
   "author": "ChengWei Lin",
   "license": "ISC",
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "vitepress": "1.0.0-rc.32"
   }
 }

@@ -1,5 +1,7 @@
 import { defineConfig } from 'vitepress';
 
+const isProduction = process.env.NODE_ENV === 'production';
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: 'CheLin Blog',
@@ -15,7 +17,10 @@ export default defineConfig({
       {
         text: 'Examples',
         items: [
-          { text: 'Markdown Examples', link: '/markdown/markdown-examples' },
+          {
+            text: 'Markdown Examples',
+            link: '/markdown/markdown-examples',
+          },
           { text: 'Runtime API Examples', link: '/api/api-examples' },
         ],
       },
@@ -24,6 +29,6 @@ export default defineConfig({
     socialLinks: [{ icon: 'github', link: 'https://github.com/linche0859' }],
   },
   srcDir: './src',
-  base: '/chelin-blog/',
-  cleanUrls: true,
+  base: isProduction ? '/chelin-blog/' : '/',
+  // cleanUrls: true,
 });
