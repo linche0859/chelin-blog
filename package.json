@@ -1,0 +1,18 @@
+{
+  "name": "chelin-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "keywords": [],
+  "author": "ChengWei Lin",
+  "license": "ISC",
+  "devDependencies": {
+    "vitepress": "1.0.0-rc.32"
+  }
+}
