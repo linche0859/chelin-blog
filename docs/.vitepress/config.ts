@@ -25,4 +25,5 @@ export default defineConfig({
   },
   srcDir: './src',
   base: '/chelin-blog/',
+  cleanUrls: true,
 });
