@@ -1,4 +1,6 @@
-import { defineConfig } from 'vitepress';
+import { defineConfig, loadEnv } from 'vitepress';
+
+const env = loadEnv('', '');
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -30,9 +32,9 @@ export default defineConfig({
     search: {
       provider: 'algolia',
       options: {
-        appId: 'B3FHHA5I4R',
-        apiKey: '1457419de0a37f0c3544563013bfb4ed',
-        indexName: 'chelin',
+        appId: env.VITE_ALGOLIA_APPID,
+        apiKey: env.VITE_ALGOLIA_APIKEY,
+        indexName: env.VITE_ALGOLIA_INDEX_NAME,
       },
     },
   },
