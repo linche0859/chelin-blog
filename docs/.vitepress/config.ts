@@ -31,7 +31,7 @@ export default defineConfig({
       provider: 'algolia',
       options: {
         appId: 'B3FHHA5I4R',
-        apiKey: '0d1f9c055a6f087a0bc0a7fecef45f2c',
+        apiKey: '1457419de0a37f0c3544563013bfb4ed',
         indexName: 'chelin',
       },
     },
